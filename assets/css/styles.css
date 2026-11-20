@@ -642,6 +642,22 @@ em { font-style: italic; }
   filter: drop-shadow(0 16px 30px rgba(42, 36, 70, 0.18));
 }
 
+/* A real photo fills the rounded panel instead of sitting on a tone. */
+.product-art.has-photo {
+  position: relative;
+  display: block;
+  padding: 0;
+  box-shadow: var(--shadow-md);
+}
+.product-art.has-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: none;
+}
+
 .benefit-grid {
   display: grid;
   gap: 20px;
